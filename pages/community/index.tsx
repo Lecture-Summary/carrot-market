@@ -21,9 +21,10 @@ interface PostsResponse {
 const Community: NextPage = () => {
   const { latitude, longitude } = useCoords()
   const { data } = useSWR<PostsResponse>(
-    `/api/posts?latitude=${latitude}&longitude=${longitude}`
+    latitude && longitude
+      ? `/api/posts?latitude=${latitude}&longitude=${longitude}`
+      : null
   )
-  console.log(data)
   return (
     <Layout hasTabBar title='동네생활'>
       <div className='space-y-4 divide-y-[2px]'>
