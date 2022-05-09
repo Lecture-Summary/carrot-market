@@ -39,9 +39,15 @@ const ItemDetail: NextPage = () => {
     <Layout canGoBack>
       <div className='px-4  py-4'>
         <div className='mb-8'>
-          <div className='h-96 bg-slate-300' />
+          <img
+            src={`https://imagedelivery.net/wV2giV6nxbTuW1gLZB_5XQ/${data?.product.image}/public`}
+            className='h-96 bg-slate-300'
+          />
           <div className='flex cursor-pointer py-3 border-t border-b items-center space-x-3'>
-            <div className='w-12 h-12 rounded-full bg-slate-300' />
+            <img
+              src={`https://imagedelivery.net/wV2giV6nxbTuW1gLZB_5XQ/${user?.avatar}/avatar`}
+              className='w-12 h-12 rounded-full bg-slate-300'
+            />
             <div>
               <p className='text-sm font-medium text-gray-700'>
                 {data?.product.user.name}
@@ -80,7 +86,7 @@ const ItemDetail: NextPage = () => {
                     fill='currentColor'
                   >
                     <path
-                      fill-rule='evenodd'
+                      fillRule='evenodd'
                       d='M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z'
                       clipRule='evenodd'
                     />
