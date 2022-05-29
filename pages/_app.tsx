@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         src='https://developers.kakao.com/sdk/js/kakao.js'
         strategy='lazyOnload'
       />
-      <Script
+      {/* <Script
         src='https://connect.facebook.net/en_US/sdk.js'
         onLoad={() => {
           window.fbAsyncInit = function () {
@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             })
           }
         }}
-      />
+      /> */}
     </SWRConfig>
   )
 }
