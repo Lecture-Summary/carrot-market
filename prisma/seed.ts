@@ -10,6 +10,9 @@ async function main() {
         description: String(item),
         price: item,
         user: { connect: { id: 9 } },
+        cloudflareId: '1',
+        cloudflareKey: '1',
+        cloudflareUrl: '1',
       },
     })
     console.log(`${item}/500`)
