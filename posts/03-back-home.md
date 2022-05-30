@@ -4,6 +4,6 @@ date: 2022.02.02
 category: home
 ---
 
-# Travel more. Buy less stuff.
+# ComeBack Home~~
 
-Get fat.
+YaYa
