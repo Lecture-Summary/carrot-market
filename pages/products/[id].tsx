@@ -150,7 +150,7 @@ const ItemDetail: NextPage<ItemDetailResponse> = ({
 export const getStaticPaths: GetStaticPaths = () => {
   return {
     paths: [],
-    fallback: 'blocking',
+    fallback: true, //'blocking',
   }
 }
 
