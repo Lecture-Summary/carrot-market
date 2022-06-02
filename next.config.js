@@ -6,6 +6,8 @@ const nextConfig = {
   },
   experimental: {
     reactRoot: true,
+    runtime: 'nodejs',
+    serverComponents: true,
   },
 }
 
